@@ -1,0 +1,98 @@
+.subnavbar {
+  width: 100%;
+  min-height: 56px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.subnavbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.subnavbar-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.subnavbar-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #18495a;
+}
+
+.subnavbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.subnavbar-action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  color: #18495a;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.subnavbar-action:hover {
+  background: #e6eef2;
+}
+
+.subnavbar-socket {
+  font-size: 1.2rem;
+  margin-right: 2px;
+}
+
+.subnavbar-robot {
+  font-size: 1.1rem;
+  margin-right: 2px;
+}
+
+.subnavbar-invite {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1.5px solid #e6eef2;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+.subnavbar-invite-main {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  color: #18495a;
+  font-weight: 500;
+}
+
+.subnavbar-invite-separator {
+  color: #18495a;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.subnavbar-invite-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subnavbar-link-icon {
+  font-size: 1.1rem;
+  color: #18495a;
+}

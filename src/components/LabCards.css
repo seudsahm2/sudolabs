@@ -1,0 +1,92 @@
+.lab-cards-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 32px;
+  margin: 32px 0 0 0;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+.lab-card-hz {
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #0001;
+  overflow: hidden;
+  min-height: 160px;
+  align-items: stretch;
+}
+
+.lab-card-img-hz {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.lab-card-content-hz {
+  flex: 1;
+  padding: 20px 24px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lab-card-institute-hz {
+  font-size: 1rem;
+  color: #b0b8be;
+  margin-bottom: 2px;
+}
+
+.lab-card-title-hz {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #18495a;
+  margin-bottom: 8px;
+}
+
+.lab-card-separator-hz {
+  height: 2px;
+  width: 36px;
+  background: #e6eef2;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+.lab-card-meta-hz {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 1.02rem;
+}
+
+.lab-card-rating-hz {
+  display: flex;
+  align-items: center;
+  color: #f39c12;
+  font-weight: 500;
+  gap: 4px;
+}
+.lab-card-star-hz {
+  color: #f39c12;
+  font-size: 1.1rem;
+  margin-right: 2px;
+}
+.lab-card-reviews-hz {
+  color: #b0b8be;
+  font-size: 0.98rem;
+  margin-left: 2px;
+}
+.lab-card-price-hz {
+  font-weight: bold;
+  color: #18495a;
+  font-size: 1.08rem;
+}
+
+@media (max-width: 900px) {
+  .lab-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

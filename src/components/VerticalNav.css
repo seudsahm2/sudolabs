@@ -1,0 +1,41 @@
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0;
+  width: 56px;
+  min-width: 56px;
+  background: transparent;
+  margin-top: 0;
+}
+
+.vertical-nav-btn {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #e6eef2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.18s, border 0.18s;
+  padding: 0;
+}
+.vertical-nav-btn.selected {
+  background: #18495a;
+  border-color: #18495a;
+}
+.vertical-nav-btn.selected img {
+  filter: brightness(0) invert(1);
+}
+.vertical-nav-btn img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+.vertical-nav-btn:hover:not(.selected) {
+  border-color: #256b8c;
+  background: #e6eef2;
+}

@@ -1,0 +1,134 @@
+.navbar {
+  width: 100%;
+  height: 64px;
+  background: #18495a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-hamburger {
+  background: none;
+  border: none;
+  padding: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-right: 24px;
+}
+
+.navbar-tab {
+  background: #fff;
+  color: #18495a;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 40px;
+  box-shadow: 0 2px 8px #0001;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+.navbar-tab-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.navbar-tab-label {
+  margin-right: 12px;
+}
+
+.navbar-tab-close {
+  background: none;
+  border: none;
+  color: #18495a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 4px;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 4px;
+}
+
+.navbar-robot {
+  width: 28px;
+  height: 28px;
+}
+
+.navbar-user {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e6eef2;
+  padding: 2px;
+}
+
+.navbar-lang {
+  margin-left: 4px;
+  margin-right: 16px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.navbar-username {
+  font-weight: 500;
+  color: #fff;
+  margin-left: 4px;
+}
+
+.navbar-btn {
+  background: none;
+  border: 1.5px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 6px 20px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.navbar-btn.login:hover,
+.navbar-btn.signup:hover {
+  background: #fff;
+  color: #18495a;
+  border: 1.5px solid #18495a;
+}
+
+.navbar-title-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 12px;
+  letter-spacing: 1px;
+}
