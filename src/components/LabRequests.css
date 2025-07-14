@@ -1,0 +1,78 @@
+.lab-requests-container {
+  width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.lab-requests-tabs {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e6eef2;
+  padding-bottom: 12px;
+}
+
+.lab-requests-tab {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #6b7a86;
+  padding: 4px 8px;
+  border-bottom: 3px solid transparent;
+  transition: color 0.18s, border-color 0.18s;
+}
+.lab-requests-tab.active,
+.lab-requests-tab:hover {
+  color: #18495a;
+  border-bottom-color: #18495a;
+}
+
+.lab-requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #e6eef2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.lab-requests-table th,
+.lab-requests-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #d0d8dc;
+}
+.lab-requests-table th {
+  color: #18495a;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.lab-requests-table td {
+  color: #256b8c;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.lab-requests-table tr:last-child td {
+  border-bottom: none;
+}
+.file-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+.view-notes-btn {
+  background: #fff;
+  border: 1.5px solid #d0d8dc;
+  border-radius: 8px;
+  padding: 6px 16px;
+  color: #18495a;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.view-notes-btn:hover {
+  background: #f0f4f7;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #18495a;
+}

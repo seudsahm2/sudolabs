@@ -1,0 +1,114 @@
+.lab-booking-container {
+  width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.lab-booking-tabs {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e6eef2;
+  padding-bottom: 12px;
+}
+
+.lab-booking-tab {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #6b7a86;
+  padding: 4px 8px;
+  border-bottom: 3px solid transparent;
+  transition: color 0.18s, border-color 0.18s;
+}
+.lab-booking-tab.active,
+.lab-booking-tab:hover {
+  color: #18495a;
+  border-bottom-color: #18495a;
+}
+
+.lab-booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #e6eef2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.lab-booking-table th,
+.lab-booking-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #d0d8dc;
+  vertical-align: middle;
+}
+.lab-booking-table th {
+  color: #18495a;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.lab-booking-table td {
+  color: #256b8c;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.lab-booking-table tr:last-child td {
+  border-bottom: none;
+}
+.lab-booking-user-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.lab-booking-user-icon img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e6eef2;
+}
+.lab-booking-user-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+  color: #18495a;
+  font-size: 1.05rem;
+  position: relative;
+}
+.lab-booking-lab-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.lab-booking-lab-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.lab-booking-lab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.lab-booking-lab-institute {
+  font-size: 0.98rem;
+  color: #b0b8be;
+}
+.lab-booking-lab-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #18495a;
+}
+.lab-booking-underline {
+  width: 60px;
+  height: 2px;
+  background: #e6eef2;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #18495a;
+}

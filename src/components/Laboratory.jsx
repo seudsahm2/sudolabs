@@ -1,5 +1,4 @@
 import './Laboratory.css';
-import userIcon from '../assets/user-svgrepo-com.svg';
 import hamburgerIcon from '../assets/hamburger-button.svg';
 import globeIcon from '../assets/globe.svg';
 import robotIcon from '../assets/robot.svg';

@@ -2,22 +2,28 @@ import './VerticalNav.css';
 import labIcon from '../assets/hamburger-button.svg'; // Replace with actual lab icon if available
 import helpIcon from '../assets/robot.svg'; // Replace with actual help icon if available
 import docIcon from '../assets/person-circle.svg'; // Replace with actual doc icon if available
+import { NavLink } from 'react-router-dom';
 
-export default function VerticalNav({ selected = 0 }) {
+export default function VerticalNav() {
   const icons = [
-    { src: labIcon, alt: 'Lab', key: 'lab' },
-    { src: helpIcon, alt: 'Help', key: 'help' },
-    { src: docIcon, alt: 'Docs', key: 'docs' },
+    { src: labIcon, alt: 'Lab', key: 'lab', to: '/' },
+    { src: helpIcon, alt: 'Requests', key: 'requests', to: '/requests' },
+    { src: docIcon, alt: 'Docs', key: 'docs', to: '/third' },
+    { src: labIcon, alt: 'Platform', key: 'platform', to: '/platform' },
   ];
   return (
     <nav className="vertical-nav">
-      {icons.map((icon, idx) => (
-        <button
+      {icons.map((icon) => (
+        <NavLink
           key={icon.key}
-          className={`vertical-nav-btn${selected === idx ? ' selected' : ''}`}
+          to={icon.to}
+          className={({ isActive }) =>
+            `vertical-nav-btn${isActive ? ' selected' : ''}`
+          }
+          end={icon.to === '/'}
         >
           <img src={icon.src} alt={icon.alt} />
-        </button>
+        </NavLink>
       ))}
     </nav>
   );

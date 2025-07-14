@@ -1,0 +1,356 @@
+.platform-root {
+  min-height: 100vh;
+  background: linear-gradient(to right, #e6eef2 0%, #e6eef2 600px, #fff 600px, #fff 100%);
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.platform-main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  height: calc(100vh - 64px);
+}
+
+.platform-left {
+  width: 520px;
+  min-width: 340px;
+  background: #fff;
+  border-right: 1.5px solid #e6eef2;
+  padding: 32px 18px 32px 32px;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.platform-features-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.platform-features-row {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-bottom: 0;
+}
+
+.platform-feature-pill {
+  border: 1.5px solid #18495a;
+  border-radius: 24px;
+  padding: 10px 28px;
+  font-size: 1.05rem;
+  color: #18495a;
+  background: #fff;
+  white-space: nowrap;
+  font-weight: 500;
+  transition: background 0.18s, color 0.18s;
+  cursor: pointer;
+}
+
+.platform-feature-pill:hover {
+  background: #e6eef2;
+}
+
+.platform-right {
+  flex: 1;
+  background: #e6eef2;
+  min-height: 100vh;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.platform-searchbar {
+  width: 520px;
+  max-width: 90vw;
+  box-shadow: 0 2px 8px #0001;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.platform-searchbar-icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+}
+
+.platform-searchbar-icon.right {
+  margin-left: auto;
+}
+
+.platform-searchbar-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.08rem;
+  color: #18495a;
+  padding: 0 8px;
+  font-family: inherit;
+}
+
+.platform-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  max-width: 600px;
+  width: 100%;
+}
+
+
+.platform-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px #0001;
+  overflow: hidden;
+  width: 370px;
+  min-width: 320px;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+.platform-card-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 24px 24px 0 0;
+}
+
+.platform-card-links {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  height: 48px;
+  background: none;
+}
+
+.platform-card-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.02rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 100%;
+  transition: background 0.18s, color 0.18s;
+}
+
+.platform-card-link.free {
+  background: #e6eef2;
+  color: #18495a;
+  border-radius: 0 0 0 24px;
+}
+
+.platform-card-link.wish {
+  background: #fff;
+  color: #18495a;
+}
+
+.platform-card-link.enroll {
+  background: #18495a;
+  color: #fff;
+  border-radius: 0 0 24px 0;
+}
+
+.platform-card-slant {
+  width: 0;
+  height: 100%;
+  border-left: 2.5px solid #e6eef2;
+  transform: skew(-20deg);
+  margin: 0 -2px;
+}
+
+.platform-card-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+  flex: 0 0 auto;
+  margin-top: 0;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.platform-card-icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 60px;
+}
+
+.platform-card-icon-btn {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px #0001;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s;
+}
+
+.platform-card-icon-label {
+  font-size: 1rem;
+  color: #18495a;
+  font-weight: 500;
+}
+
+.platform-card-icon-col.wide {
+  gap: 12px;
+  min-width: 54px;
+}
+
+
+.platform-card-icon-btn.wide {
+  width: 44px;
+  height: 90px;
+  border-radius: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px #0001;
+  cursor: pointer;
+  transition: background 0.18s;
+  /* Connect backgrounds for first 3 icons */
+}
+  /* For first 3 icons, connect backgrounds */
+
+.platform-card-icon-col.connected {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 1px 4px #0001;
+  padding: 8px 0;
+  width: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.platform-card-icon-btn.wide.selected {
+  background: #14532d;
+  color: #fff;
+}
+
+.platform-profile-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+  width: 520px;
+  max-width: 90vw;
+  background: none;
+}
+
+.platform-profile-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e6eef2;
+}
+
+.platform-profile-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.platform-profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.platform-profile-name {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #18495a;
+}
+
+.platform-profile-follow {
+  background: #18495a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.platform-profile-desc {
+  color: #6b7a86;
+  font-size: 1rem;
+}
+
+.platform-profile-tags {
+  display: flex;
+  gap: 8px;
+  color: #18495a;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1100px) {
+  .platform-main {
+    flex-direction: column;
+  }
+  .platform-left {
+    width: 100%;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1.5px solid #e6eef2;
+    padding: 32px 18px;
+    height: auto;
+    max-height: 220px;
+  }
+  .platform-right {
+    min-height: 0;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .platform-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .platform-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .platform-profile-row {
+    width: 100%;
+    max-width: 100vw;
+  }
+}
